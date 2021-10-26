@@ -1,0 +1,14 @@
+title: Actifio GO OnVault
+description: Permissions for SA in client project to perform OnVault operations
+stage: GA
+includedPermissions:
+# Required during OnVault jobs to get the bucket specified by user or profile
+- storage.buckets.get
+# Required during OnVault jobs to place objects created by OnVault jobs
+- storage.objects.create
+# Required during Expiration jobs to expire OnVault images
+- storage.objects.delete
+# Required during Mount jobs to get objects from Object Storage
+- storage.objects.get
+# Required during Mount jobs to get objects from Object Storage
+- storage.objects.list
