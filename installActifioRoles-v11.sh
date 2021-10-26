@@ -3,7 +3,7 @@
 # ONVAULT
 
 YAML_FILE='actifiogo-onvault-role-template.yaml'
-YAML_URL=https://storage.googleapis.com/actifio-images/Roles/actifiogo-onvault-role-template-v1.yaml
+YAML_URL=https://raw.githubusercontent.com/Actifio/rolepermissions/main/actifiogo-onvault-role-template.yaml
 echo "Downloading template for ActifioGO IAM role creation"
 curl ${YAML_URL} -o ${YAML_FILE}
 
@@ -37,7 +37,7 @@ echo
 # Persistent Disk Snapshots
 
 YAML_FILE='actifiogo-pd-snaps-role-template.yaml'
-YAML_URL=https://storage.googleapis.com/actifio-images/Roles/actifiogo-pd-snaps-role-template-v8.yaml
+YAML_URL=https://raw.githubusercontent.com/Actifio/rolepermissions/main/actifiogo-pd-snaps-role-template.yaml
 echo "Downloading template for ActifioGO IAM role creation"
 curl ${YAML_URL} -o ${YAML_FILE}
 
@@ -67,7 +67,7 @@ echo
 # SYSTEM RECOVERY
 
 YAML_FILE='actifiogo-system-recover-role-template.yaml'
-YAML_URL=https://storage.googleapis.com/actifio-images/Roles/actifiogo-system-recover-role-template-v6.yaml
+YAML_URL=https://raw.githubusercontent.com/Actifio/rolepermissions/main/actifiogo-system-recover-role-template.yaml
 
 echo "Downloading template for ActifioGO IAM role creation"
 curl ${YAML_URL} -o ${YAML_FILE}
