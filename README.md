@@ -1,6 +1,7 @@
 # Custom role permissions
-This repository contains a script and YAML files to create or update custom roles to use with Actifio GO. After running the script detailed below, you will have three custom roles as follows:
+This repository contains a script and YAML files to create or update custom roles to use with Actifio GO. After running the script detailed below, you will have the  custom roles as follows:
 
+* **Actifio GO Full**: Use this for when you want to use a single Service Account for Actifio GO.  It has all the permissions of the other three roles.
 * **Actifio GO OnVault**: Use this for adding a Google Cloud Storage bucket to Actifio GO
 * **Actifio GO System Recovery**: Use this when adding a Credential to either create, expire, mount and delete GCP Instance snapshots and also System Recovery jobs.
 * **Actifio GO Compute Engine VM Instance Snapshots**: Use this when adding a Credential to either create and use and delete GCP Instance snapshots and you don't want the Service Account to be able to delete Google Cloud Instances and Disks.  It cannot be used for System Recovery jobs.
@@ -12,4 +13,4 @@ curl -o installActifioRoles.sh https://raw.githubusercontent.com/Actifio/roleper
 chmod +x installActifioRoles.sh
 ./installActifioRoles.sh
 ```
-You will now see three new roles in IAM --> Roles.   Assign these to the relevant Service Accounts as required.
+You will now see the new roles in IAM --> Roles.   Assign these to the relevant Service Accounts as required.
