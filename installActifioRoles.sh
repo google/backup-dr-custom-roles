@@ -91,3 +91,33 @@ else
 fi
 echo
 echo "System Recovery Role installed for use with an SA to perform System Recovery in Google Cloud"
+
+
+
+# Full Role
+
+YAML_FILE='actifiogo-full-role-template.yaml'
+YAML_URL=https://raw.githubusercontent.com/Actifio/rolepermissions/main/actifiogo-full-role-template.yaml
+
+echo "Downloading template for ActifioGO IAM role creation"
+curl ${YAML_URL} -o ${YAML_FILE}
+
+echo
+echo "Creating ActifioGO Full IAM role, please wait"
+sleep 5
+
+# set the variables to be used
+ROLE_NAME=ActifioGOFullRole
+
+echo "Checking if ActifioGO IAM role ${ROLE_NAME} already exists in project ${PROJECT_ID}"
+# check if role already exists else create new
+if gcloud iam roles describe ${ROLE_NAME} --project=${PROJECT_ID} --quiet
+then
+    echo "IAM Role found, running update"
+        gcloud iam roles update ${ROLE_NAME} --project=${PROJECT_ID} --file=${YAML_FILE} --quiet
+else
+    echo "IAM Role not found, creating new"
+        gcloud iam roles create ${ROLE_NAME} --project=${PROJECT_ID} --file=${YAML_FILE} --quiet
+fi
+echo
+echo "Actifio GO Full Role installed for use with an SA to perform all Actifio tasks in Google Cloud"
