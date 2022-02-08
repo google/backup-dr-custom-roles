@@ -51,6 +51,8 @@ includedPermissions:
 - compute.instances.list
 # Required during Compute Engine VM instance creation for setting labels
 - compute.instances.setLabels
+# Required during Instance creation
+- compute.instances.setMetadata
 # Required during Compute Engine VM instance creation for setting the service account
 - compute.instances.setServiceAccount
 # Required during Compute Engine VM instance creation for setting tags
