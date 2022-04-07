@@ -38,6 +38,8 @@ includedPermissions:
 # Get all firewall rules to get the network tags present in the project
 - compute.firewalls.list
 # Required during Compute Engine VM instance creation to get disk image
+- compute.images.create
+- compute.images.delete
 - compute.images.get
 - compute.images.useReadOnly
 # Create Compute Engine VM instance
