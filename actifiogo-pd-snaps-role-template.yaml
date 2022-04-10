@@ -1,5 +1,5 @@
 title: Actifio GO Compute Engine VM Instance Snapshots
-description: Permissions for SA in client project to perform Persistent Disk Snapshots, Expirations and Mounts but not delete unmount of mounted disks or instances
+description: Permissions for SA in client project to perform Persistent Disk Snapshots, Expirations and Mounts
 stage: GA
 includedPermissions:
 # Required during Compute Engine VM instance creation to create IP address. In general createinternal is actually used.
@@ -80,15 +80,12 @@ includedPermissions:
 # Required to display which projects the SA can recover into
 - resourcemanager.projects.get
 # Required for IP address cleanup when Compute Engine VM instance deployment fails
-# - compute.addresses.delete
+- compute.addresses.delete
 # Required during Compute Engine VM instance creation to use customer subnet
-# - compute.addresses.deleteInternal
-#- compute.networks.delete
-# - compute.subnetworks.create
-# - compute.subnetworks.delete
-# Cleanup instance in case Compute Engine VM instance deployment fails
-#- compute.instances.delete
-#- compute.instances.detachDisk
-#- compute.instances.stop
-# Required for disk cleanup when Compute Engine VM instance deployment fails
-#- compute.disks.delete
+- compute.addresses.deleteInternal
+# Cleanup instance in case Compute Engine VM instance deployment fails  or during unmount
+- compute.instances.delete
+- compute.instances.detachDisk
+- compute.instances.stop
+# Required for disk cleanup when Compute Engine VM instance deployment fails or during unmount
+- compute.disks.delete
