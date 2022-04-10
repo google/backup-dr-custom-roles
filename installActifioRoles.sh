@@ -60,7 +60,6 @@ else
 fi
 echo
 echo "Persistent Disk Role installed for use with an SA to perform Google Cloud VM Instance Snapshots in Google Cloud"
-echo "NOTE - This role does NOT allow Actifio GO to delete a VM, meaning only FORGET will work.  Unmount and Delete will fail"
 echo
 
 
