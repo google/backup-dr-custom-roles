@@ -13,4 +13,6 @@ curl -o installActifioRoles.sh https://raw.githubusercontent.com/Actifio/roleper
 chmod +x installActifioRoles.sh
 ./installActifioRoles.sh
 ```
+Close your Cloud Shell and refresh your browser window.
+
 You will now see the new roles in IAM --> Roles.   Assign these to the relevant Service Accounts as required.
