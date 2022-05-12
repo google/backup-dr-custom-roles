@@ -1,4 +1,4 @@
-title: BackupDR Service Account
+title: Backup and DR Service Account
 description: Permissions for SA in client project to perform API operations
 stage: GA
 includedPermissions:
