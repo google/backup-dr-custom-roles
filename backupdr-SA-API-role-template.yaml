@@ -1,0 +1,7 @@
+title: BackupDR Service Account
+description: Permissions for SA in client project to perform API operations
+stage: GA
+includedPermissions:
+- iam.serviceAccounts.get
+- iam.serviceAccounts.getOpenIdToken
+- resourcemanager.projects.get
