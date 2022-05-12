@@ -4,11 +4,11 @@
 
 YAML_FILE='actifiogo-onvault-role-template.yaml'
 YAML_URL=https://raw.githubusercontent.com/Actifio/rolepermissions/main/actifiogo-onvault-role-template.yaml
-echo "Downloading template for Gogole Backup and DR IAM role creation"
+echo "Downloading template for Google Backup and DR IAM role creation"
 curl ${YAML_URL} -o ${YAML_FILE}
 
 echo
-echo "Creating Gogole Backup and DR OnVault IAM role, please wait"
+echo "Creating Google Backup and DR OnVault IAM role, please wait"
 sleep 5
 
 # enable the API
