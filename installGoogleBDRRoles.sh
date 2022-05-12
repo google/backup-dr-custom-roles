@@ -2,8 +2,8 @@
 
 # ONVAULT
 
-YAML_FILE='actifiogo-onvault-role-template.yaml'
-YAML_URL=https://raw.githubusercontent.com/Actifio/rolepermissions/main/actifiogo-onvault-role-template.yaml
+YAML_FILE='gbdr-onvault-role-template.yaml'
+YAML_URL=https://raw.githubusercontent.com/Actifio/rolepermissions/main/gbdr-onvault-role-template.yaml
 echo "Downloading template for Google Backup and DR IAM role creation"
 curl ${YAML_URL} -o ${YAML_FILE}
 
@@ -36,9 +36,9 @@ echo
 
 # Persistent Disk Snapshots
 
-YAML_FILE='actifiogo-pd-snaps-role-template.yaml'
-YAML_URL=https://raw.githubusercontent.com/Actifio/rolepermissions/main/actifiogo-pd-snaps-role-template.yaml
-echo "Downloading template for ActifioGO IAM role creation"
+YAML_FILE='gbdr-gce-instance-backup-role-template.yaml'
+YAML_URL=https://raw.githubusercontent.com/Actifio/rolepermissions/main/gbdr-gce-instance-backup-role-template.yaml
+echo "Downloading template for Google Backup and DR IAM role creation"
 curl ${YAML_URL} -o ${YAML_FILE}
 
 echo
