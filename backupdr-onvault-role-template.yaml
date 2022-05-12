@@ -1,4 +1,4 @@
-title: GBDR OnVault 
+title: BackupDR OnVault 
 description: Permissions for SA in client project to perform OnVault operations
 stage: GA
 includedPermissions:
