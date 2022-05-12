@@ -1,4 +1,4 @@
-title:  BackupDR GCE Instance Backups
+title:  Backup and DR GCE Instance Backups
 description: Permissions for SA in client project to perform Persistent Disk Snapshots, Expirations and Mounts
 stage: GA
 includedPermissions:
