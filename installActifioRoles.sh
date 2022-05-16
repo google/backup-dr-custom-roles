@@ -120,3 +120,5 @@ else
 fi
 echo
 echo "Actifio GO Full Role installed for use with an SA to perform all Actifio tasks in Google Cloud"
+echo 
+echo "Please close the Cloud Shell and then refresh your browser"
