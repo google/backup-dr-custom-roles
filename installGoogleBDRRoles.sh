@@ -85,7 +85,9 @@ else
 fi
 echo
 echo "Role installed for use with an SA to perform Backup and DR APIs in Google Cloud"
-echo
+echo 
+echo "Please close the Cloud Shell and then refresh your browser"
+
 
 
 
