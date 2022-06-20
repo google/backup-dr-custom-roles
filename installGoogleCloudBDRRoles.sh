@@ -16,7 +16,7 @@
 # ONVAULT
 YAML_FILE='backupdr-onvault-role-template.yaml'
 YAML_URL=https://raw.githubusercontent.com/Actifio/rolepermissions/main/backupdr-onvault-role-template.yaml
-echo "Downloading template for Google Backup and DR IAM role creation"
+echo "Downloading template for Google Cloud Backup and DR IAM role creation"
 curl ${YAML_URL} -o ${YAML_FILE}
 
 echo
@@ -32,7 +32,7 @@ gcloud services enable cloudresourcemanager.googleapis.com
 PROJECT_ID=$(gcloud config get-value project)
 ROLE_NAME=BackupDROnVault
 
-echo "Checking if Google Backup and DR IAM role ${ROLE_NAME} already exists in project ${PROJECT_ID}"
+echo "Checking if Google Cloud Backup and DR IAM role ${ROLE_NAME} already exists in project ${PROJECT_ID}"
 # check if role already exists else create new
 if gcloud iam roles describe ${ROLE_NAME} --project=${PROJECT_ID} --quiet
 then
