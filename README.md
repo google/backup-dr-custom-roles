@@ -10,7 +10,7 @@ curl -o installActifioRoles.sh https://raw.githubusercontent.com/Actifio/roleper
 chmod +x installActifioRoles.sh
 ./installActifioRoles.sh
 ```
-Close your Cloud Shell and refresh your browser window.
+Once the commands have run, close your Cloud Shell and refresh your browser window.
 
 ### New custom roles for Actifio GO
 
@@ -32,7 +32,7 @@ curl -o installCloudGoogleBDRRoles.sh https://raw.githubusercontent.com/Actifio/
 chmod +x installGoogleCloudBDRRoles.sh
 ./installGoogleCloudBDRRoles.sh
 ```
-Close your Cloud Shell and refresh your browser window.
+Once the commands have run, close your Cloud Shell and refresh your browser window.
 
 ### New custom roles for Google Cloud Backup and DR
 
