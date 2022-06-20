@@ -28,7 +28,7 @@ After running the script detailed below, you will have the  custom roles as foll
 To add these roles, in your Google Console Cloud shell, run these three commands:
 
 ```
-curl -o installCloudGoogleBDRRoles.sh https://raw.githubusercontent.com/Actifio/rolepermissions/main/installGoogleCloudBDRRoles.sh
+curl -o installGoogleCloudBDRRoles.sh https://raw.githubusercontent.com/Actifio/rolepermissions/main/installGoogleCloudBDRRoles.sh
 chmod +x installGoogleCloudBDRRoles.sh
 ./installGoogleCloudBDRRoles.sh
 ```
