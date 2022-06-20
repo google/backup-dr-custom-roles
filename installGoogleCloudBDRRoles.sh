@@ -49,7 +49,7 @@ echo
 # GCE Instance Backups
 YAML_FILE='backupdr-gce-instance-backup-role-template.yaml'
 YAML_URL=https://raw.githubusercontent.com/Actifio/rolepermissions/main/backupdr-gce-instance-backup-role-template.yaml
-echo "Downloading template for Google Backup and DR IAM role creation"
+echo "Downloading template for Google Cloud Backup and DR IAM role creation"
 curl ${YAML_URL} -o ${YAML_FILE}
 
 echo
@@ -76,7 +76,7 @@ echo
 # SA API 
 YAML_FILE='backupdr-sa-api-role-template.yaml'
 YAML_URL=https://raw.githubusercontent.com/Actifio/rolepermissions/main/backupdr-sa-api-role-template.yaml
-echo "Downloading template for Google Backup and DR IAM role creation"
+echo "Downloading template for Google Cloud Backup and DR IAM role creation"
 curl ${YAML_URL} -o ${YAML_FILE}
 
 echo
