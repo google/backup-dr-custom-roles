@@ -20,7 +20,7 @@ echo "Downloading template for Google Backup and DR IAM role creation"
 curl ${YAML_URL} -o ${YAML_FILE}
 
 echo
-echo "Creating Google Backup and DR OnVault IAM role, please wait"
+echo "Creating Google Cloud Backup and DR OnVault IAM role, please wait"
 sleep 5
 
 # enable the API
@@ -53,7 +53,7 @@ echo "Downloading template for Google Backup and DR IAM role creation"
 curl ${YAML_URL} -o ${YAML_FILE}
 
 echo
-echo "Creating Google Backup and DR GCE Instance backup IAM role, please wait"
+echo "Creating Google Cloud Backup and DR GCE Instance backup IAM role, please wait"
 sleep 5
 
 # set the variables to be used
@@ -80,7 +80,7 @@ echo "Downloading template for Google Backup and DR IAM role creation"
 curl ${YAML_URL} -o ${YAML_FILE}
 
 echo
-echo "Creating Google Backup and Service Account API IAM role, please wait"
+echo "Creating Google Cloud Backup and Service Account API IAM role, please wait"
 sleep 5
 
 # set the variables to be used
