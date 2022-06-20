@@ -21,14 +21,14 @@ You will now see the new roles in IAM --> Roles.   Assign these to the relevant 
 
 **If you don't see the new roles, refresh your browser window.**
 
-## Google Backup and DR
+## Google Cloud Backup and DR
 
 To add these roles, in your Google Console Cloud shell, run these three commands:
 
 ```
-curl -o installGoogleBDRRoles.sh https://raw.githubusercontent.com/Actifio/rolepermissions/main/installGoogleBDRRoles.sh
-chmod +x installGoogleBDRRoles.sh
-./installGoogleBDRRoles.sh
+curl -o installCloudGoogleBDRRoles.sh https://raw.githubusercontent.com/Actifio/rolepermissions/main/installGoogleCloudBDRRoles.sh
+chmod +x installGoogleCloudBDRRoles.sh
+./installGoogleCloudBDRRoles.sh
 ```
 Close your Cloud Shell and refresh your browser window.
 
