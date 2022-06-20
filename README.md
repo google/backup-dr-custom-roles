@@ -12,13 +12,9 @@ chmod +x installActifioRoles.sh
 ```
 Close your Cloud Shell and refresh your browser window.
 
-You will now see the new roles in IAM --> Roles.   Assign these to the relevant Service Accounts as required.
-
-
-
 ### New custom roles for Actifio GO
 
-After running the script detailed below, you will have the  custom roles as follows:
+After running the script detailed below, you will have the  custom roles as follows.  Assign these to the relevant Service Accounts as required.
 
 * **Actifio GO Full**: Use this for when you want to use a single Service Account for Actifio GO.  It has all the permissions of the other three roles.
 * **Actifio GO OnVault**: Use this for adding a Google Cloud Storage bucket to Actifio GO
@@ -38,11 +34,9 @@ chmod +x installGoogleCloudBDRRoles.sh
 ```
 Close your Cloud Shell and refresh your browser window.
 
-You will now see the new roles in IAM --> Roles.   Assign these to the relevant Service Accounts as required.
-
 ### New custom roles for Google Cloud Backup and DR
 
-After running the script detailed below, you will have the  custom roles as follows:
+After running the script detailed below, you will have the  custom roles as follows.  Assign these to the relevant Service Accounts as required.
 
 * **Backup and DR OnVault**: Use this for adding a Google Cloud Storage bucket to Google Cloud Backup and DR
 * **Backup and DR GCE Instance Backupss**: Use this when adding a Credential to either create and use and delete GCP Instance snapshots. 
