@@ -59,7 +59,7 @@ sleep 5
 # set the variables to be used
 ROLE_NAME=BackupDRGCEInstanceBackup
 
-echo "Checking if Google Backup and DR  IAM role ${ROLE_NAME} already exists in project ${PROJECT_ID}"
+echo "Checking if Google Cloud Backup and DR  IAM role ${ROLE_NAME} already exists in project ${PROJECT_ID}"
 # check if role already exists else create new
 if gcloud iam roles describe ${ROLE_NAME} --project=${PROJECT_ID} --quiet
 then
@@ -86,7 +86,7 @@ sleep 5
 # set the variables to be used
 ROLE_NAME=BackupDRServiceAccountRole
 
-echo "Checking if Google Backup and DR  IAM role ${ROLE_NAME} already exists in project ${PROJECT_ID}"
+echo "Checking if Google Cloud Backup and DR  IAM role ${ROLE_NAME} already exists in project ${PROJECT_ID}"
 # check if role already exists else create new
 if gcloud iam roles describe ${ROLE_NAME} --project=${PROJECT_ID} --quiet
 then
