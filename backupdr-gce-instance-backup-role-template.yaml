@@ -11,7 +11,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-title:  Backup and DR GCE Instance Backups
+title:  Backup and DR Compute Engine Instance Backups
 description: Permissions for SA in client project to perform Persistent Disk Snapshots, Expirations and Mounts
 stage: GA
 includedPermissions:
