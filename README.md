@@ -39,7 +39,7 @@ Once the commands have run, close your Cloud Shell and refresh your browser wind
 After running the script detailed below, you will have the  custom roles as follows.  Assign these to the relevant Service Accounts as required.
 
 * **Backup and DR OnVault**: Use this for adding a Google Cloud Storage bucket to Google Cloud Backup and DR
-* **Backup and DR GCE Instance Backups**: Use this when adding a Credential to either create and use and delete GCP Instance snapshots. 
+* **Backup and DR Compute Engine Instance Backups**: Use this when adding a Credential to either create and use and delete GCP Instance snapshots. 
 
 **If you don't see the new roles, refresh your browser window.**
 
