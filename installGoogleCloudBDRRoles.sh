@@ -32,7 +32,7 @@ gcloud services enable cloudresourcemanager.googleapis.com
 PROJECT_ID=$(gcloud config get-value project)
 ROLE_NAME=BackupDROnVault
 
-echo "Checking if Google Cloud Backup and DR IAM role ${ROLE_NAME} already exists in project ${PROJECT_ID}"
+echo "Checking if Backup and DR OnVault IAM role ${ROLE_NAME} already exists in project ${PROJECT_ID}"
 # check if role already exists else create new
 if gcloud iam roles describe ${ROLE_NAME} --project=${PROJECT_ID} --quiet
 then
@@ -43,7 +43,7 @@ else
         gcloud iam roles create ${ROLE_NAME} --project=${PROJECT_ID} --file=${YAML_FILE} --quiet
 fi
 echo
-echo "OnVault Role installed for use with an SA to create OnVault images in Google Cloud Storage"
+echo "Custom Role installed for use with an SA to create OnVault images in Google Cloud Storage"
 echo
 
 # GCE Instance Backups
@@ -53,13 +53,13 @@ echo "Downloading template for Google Cloud Backup and DR IAM role creation"
 curl ${YAML_URL} -o ${YAML_FILE}
 
 echo
-echo "Creating Google Cloud Backup and DR GCE Instance backup IAM role, please wait"
+echo "Creating Backup and DR Compute Engine Instance Backups IAM role, please wait"
 sleep 5
 
 # set the variables to be used
 ROLE_NAME=BackupDRGCEInstanceBackup
 
-echo "Checking if Google Cloud Backup and DR  IAM role ${ROLE_NAME} already exists in project ${PROJECT_ID}"
+echo "Checking if Backup and DR Compute Engine Instance Backups IAM role ${ROLE_NAME} already exists in project ${PROJECT_ID}"
 # check if role already exists else create new
 if gcloud iam roles describe ${ROLE_NAME} --project=${PROJECT_ID} --quiet
 then
@@ -70,7 +70,7 @@ else
         gcloud iam roles create ${ROLE_NAME} --project=${PROJECT_ID} --file=${YAML_FILE} --quiet
 fi
 echo
-echo "Persistent Disk Role installed for use with an SA to perform Google Cloud VM Instance Snapshots in Google Cloud"
+echo "Custom Role installed for use with an SA to perform Compute Engine Instance Backups"
 echo
 
 # SA API 
