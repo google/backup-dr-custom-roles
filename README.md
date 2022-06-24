@@ -45,7 +45,7 @@ After running the script detailed below, you will have the  custom roles as foll
 
 ## Deleting Custom Roles
 
-If you delete a custom role then it does not automatically disappear and the Role Name cannot be reused for 30 days.   This means if you delete the role and then run the script, the install will fail because the role exists, but cannot be updated.   At this point either find the role in the IAM panel and un-delete it, or wait till the 30 day period is over.  More details can be found her:
+If you delete a custom role then it does not automatically disappear and the Role Name cannot be reused for 30 days.   This means if you delete the role and then run the script, the install will fail because the role exists, but cannot be updated.   At this point either find the role in the IAM panel and un-delete it, or wait till the 30 day period is over.  More details can be found here:
 
 https://cloud.google.com/iam/docs/creating-custom-roles#deleting-custom-role
 
