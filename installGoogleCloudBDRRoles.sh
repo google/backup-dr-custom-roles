@@ -34,7 +34,7 @@ ROLE_NAME=BackupDROnVault
 
 echo "Checking if Backup and DR OnVault IAM role ${ROLE_NAME} already exists in project ${PROJECT_ID}"
 # check if role already exists else create new
-if gcloud iam roles describe ${ROLE_NAME} --project=${PROJECT_ID} --quiet
+if gcloud iam roles describe ${ROLE_NAME} --project=${PROJECT_ID} --quiet 2>/dev/null
 then
     echo "IAM Role found, running update"
         gcloud iam roles update ${ROLE_NAME} --project=${PROJECT_ID} --file=${YAML_FILE} --quiet
@@ -61,7 +61,7 @@ ROLE_NAME=BackupDRGCEInstanceBackup
 
 echo "Checking if Backup and DR Compute Engine Instance Backups IAM role ${ROLE_NAME} already exists in project ${PROJECT_ID}"
 # check if role already exists else create new
-if gcloud iam roles describe ${ROLE_NAME} --project=${PROJECT_ID} --quiet
+if gcloud iam roles describe ${ROLE_NAME} --project=${PROJECT_ID} --quiet 2>/dev/null
 then
     echo "IAM Role found, running update"
         gcloud iam roles update ${ROLE_NAME} --project=${PROJECT_ID} --file=${YAML_FILE} --quiet
@@ -88,7 +88,7 @@ ROLE_NAME=BackupDRServiceAccountRole
 
 echo "Checking if Google Cloud Backup and DR  IAM role ${ROLE_NAME} already exists in project ${PROJECT_ID}"
 # check if role already exists else create new
-if gcloud iam roles describe ${ROLE_NAME} --project=${PROJECT_ID} --quiet
+if gcloud iam roles describe ${ROLE_NAME} --project=${PROJECT_ID} --quiet 2>/dev/null
 then
     echo "IAM Role found, running update"
         gcloud iam roles update ${ROLE_NAME} --project=${PROJECT_ID} --file=${YAML_FILE} --quiet
