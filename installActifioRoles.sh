@@ -35,7 +35,7 @@ ROLE_NAME=ActifioGOOnVault
 
 echo "Checking if ActifioGO IAM role ${ROLE_NAME} already exists in project ${PROJECT_ID}"
 # check if role already exists else create new
-if gcloud iam roles describe ${ROLE_NAME} --project=${PROJECT_ID} --quiet
+if gcloud iam roles describe ${ROLE_NAME} --project=${PROJECT_ID} --quiet 2>/dev/null
 then
     echo "IAM Role found, running update"
         gcloud iam roles update ${ROLE_NAME} --project=${PROJECT_ID} --file=${YAML_FILE} --quiet
@@ -63,7 +63,7 @@ ROLE_NAME=ActifioGOPDSnaps
 
 echo "Checking if ActifioGO IAM role ${ROLE_NAME} already exists in project ${PROJECT_ID}"
 # check if role already exists else create new
-if gcloud iam roles describe ${ROLE_NAME} --project=${PROJECT_ID} --quiet
+if gcloud iam roles describe ${ROLE_NAME} --project=${PROJECT_ID} --quiet 2>/dev/null
 then
     echo "IAM Role found, running update"
         gcloud iam roles update ${ROLE_NAME} --project=${PROJECT_ID} --file=${YAML_FILE} --quiet
@@ -93,7 +93,7 @@ ROLE_NAME=ActifioGOSystemRecovery
 
 echo "Checking if ActifioGO IAM role ${ROLE_NAME} already exists in project ${PROJECT_ID}"
 # check if role already exists else create new
-if gcloud iam roles describe ${ROLE_NAME} --project=${PROJECT_ID} --quiet
+if gcloud iam roles describe ${ROLE_NAME} --project=${PROJECT_ID} --quiet 2>/dev/null
 then
     echo "IAM Role found, running update"
         gcloud iam roles update ${ROLE_NAME} --project=${PROJECT_ID} --file=${YAML_FILE} --quiet
@@ -123,7 +123,7 @@ ROLE_NAME=ActifioGOFullRole
 
 echo "Checking if ActifioGO IAM role ${ROLE_NAME} already exists in project ${PROJECT_ID}"
 # check if role already exists else create new
-if gcloud iam roles describe ${ROLE_NAME} --project=${PROJECT_ID} --quiet
+if gcloud iam roles describe ${ROLE_NAME} --project=${PROJECT_ID} --quiet 2>/dev/null
 then
     echo "IAM Role found, running update"
         gcloud iam roles update ${ROLE_NAME} --project=${PROJECT_ID} --file=${YAML_FILE} --quiet
