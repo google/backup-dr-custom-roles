@@ -99,6 +99,7 @@ else
         gcloud iam roles create ${ROLE_NAME} --project=${PROJECT_ID} --file=${YAML_FILE} --quiet
 fi
 rm ${YAML_FILE}
+rm installGoogleCloudBDRRoles.sh
 echo
 echo "Role installed for use with an SA to perform Backup and DR APIs in Google Cloud"
 echo 
