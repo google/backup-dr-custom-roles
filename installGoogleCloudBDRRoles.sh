@@ -42,6 +42,7 @@ else
     echo "IAM Role not found, creating new"
         gcloud iam roles create ${ROLE_NAME} --project=${PROJECT_ID} --file=${YAML_FILE} --quiet
 fi
+rm ${YAML_FILE}
 echo
 echo "Custom Role installed for use with an SA to create OnVault images in Google Cloud Storage"
 echo
@@ -69,6 +70,7 @@ else
     echo "IAM Role not found, creating new"
         gcloud iam roles create ${ROLE_NAME} --project=${PROJECT_ID} --file=${YAML_FILE} --quiet
 fi
+rm ${YAML_FILE}
 echo
 echo "Custom Role installed for use with an SA to perform Compute Engine Instance Backups"
 echo
@@ -96,6 +98,7 @@ else
     echo "IAM Role not found, creating new"
         gcloud iam roles create ${ROLE_NAME} --project=${PROJECT_ID} --file=${YAML_FILE} --quiet
 fi
+rm ${YAML_FILE}
 echo
 echo "Role installed for use with an SA to perform Backup and DR APIs in Google Cloud"
 echo 
