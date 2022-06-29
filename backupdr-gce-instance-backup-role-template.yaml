@@ -102,3 +102,8 @@ includedPermissions:
 - compute.instances.stop
 # Required for disk cleanup when Compute Engine VM instance deployment fails or during unmount
 - compute.disks.delete
+# required for GCE Instance snapshot and mount when GCE instances in sole tenant nodes are being targeted
+- compute.globalOperations.get
+- compute.nodeTemplates.get
+- compute.nodeGroups.get
+- compute.nodeGroups.list
