@@ -43,6 +43,7 @@ else
     echo "IAM Role not found, creating new"
         gcloud iam roles create ${ROLE_NAME} --project=${PROJECT_ID} --file=${YAML_FILE} --quiet
 fi
+rm ${YAML_FILE}
 echo
 echo "OnVault Role installed for use with an SA to create OnVault images in Google Cloud Storage"
 echo
@@ -71,6 +72,7 @@ else
     echo "IAM Role not found, creating new"
         gcloud iam roles create ${ROLE_NAME} --project=${PROJECT_ID} --file=${YAML_FILE} --quiet
 fi
+rm ${YAML_FILE}
 echo
 echo "Persistent Disk Role installed for use with an SA to perform Google Cloud VM Instance Snapshots in Google Cloud"
 echo
@@ -101,6 +103,7 @@ else
     echo "IAM Role not found, creating new"
         gcloud iam roles create ${ROLE_NAME} --project=${PROJECT_ID} --file=${YAML_FILE} --quiet
 fi
+rm ${YAML_FILE}
 echo
 echo "System Recovery Role installed for use with an SA to perform System Recovery in Google Cloud"
 
@@ -131,6 +134,8 @@ else
     echo "IAM Role not found, creating new"
         gcloud iam roles create ${ROLE_NAME} --project=${PROJECT_ID} --file=${YAML_FILE} --quiet
 fi
+rm ${YAML_FILE}
+rm installActifioRoles.sh
 echo
 echo "Actifio GO Full Role installed for use with an SA to perform all Actifio tasks in Google Cloud"
 echo 
