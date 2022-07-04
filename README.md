@@ -10,7 +10,7 @@ Example roles that have this permission include: Owner, Editor or Service Usage 
 
 ## Actifio GO
 
-To add these roles, in your Google Console Cloud shell, run these three commands with a user that has the required permissions:
+To add these roles, in your Google Console Cloud shell, run these three commands with a user that has the **[required permissions](#required-permissions)**<br>
 
 ```
 curl -o installActifioRoles.sh https://raw.githubusercontent.com/Actifio/rolepermissions/main/installActifioRoles.sh
@@ -32,7 +32,7 @@ After running the script detailed below, you will have the  custom roles as foll
 
 ## Google Cloud Backup and DR
 
-To add these roles, in your Google Console Cloud shell, run these three commands with a user that has the required permissions:
+To add these roles, in your Google Console Cloud shell, run these three commands with a user that has the **[required permissions](#required-permissions)**<br>
 
 ```
 curl -o installGoogleCloudBDRRoles.sh https://raw.githubusercontent.com/Actifio/rolepermissions/main/installGoogleCloudBDRRoles.sh
