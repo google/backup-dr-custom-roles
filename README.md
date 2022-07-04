@@ -1,9 +1,16 @@
 # Custom role permissions
 This repository contains a script and YAML files to create or update custom roles to use with Actifio GO or Google Cloud Backup and DR.
 
+## Required Permissions
+
+To get the permissions that you need to create IAM roles, ask your administrator to grant you a role that contains at least the following permission on the project:
+* iam.roles.create
+
+Example roles that have this permission include: Owner, Editor or Service Usage Admin 
+
 ## Actifio GO
 
-To add these roles, in your Google Console Cloud shell, run these three commands:
+To add these roles, in your Google Console Cloud shell, run these three commands with a user that has the required permissions:
 
 ```
 curl -o installActifioRoles.sh https://raw.githubusercontent.com/Actifio/rolepermissions/main/installActifioRoles.sh
@@ -25,7 +32,7 @@ After running the script detailed below, you will have the  custom roles as foll
 
 ## Google Cloud Backup and DR
 
-To add these roles, in your Google Console Cloud shell, run these three commands:
+To add these roles, in your Google Console Cloud shell, run these three commands with a user that has the required permissions:
 
 ```
 curl -o installGoogleCloudBDRRoles.sh https://raw.githubusercontent.com/Actifio/rolepermissions/main/installGoogleCloudBDRRoles.sh
