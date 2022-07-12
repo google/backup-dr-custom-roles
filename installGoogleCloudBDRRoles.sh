@@ -15,7 +15,7 @@
 
 # ONVAULT
 YAML_FILE='backupdr-onvault-role-template.yaml'
-YAML_URL=https://raw.githubusercontent.com/Actifio/rolepermissions/main/backupdr-onvault-role-template.yaml
+YAML_URL=https://raw.githubusercontent.com/Google/backup-dr-custom-roles/main/backupdr-onvault-role-template.yaml
 echo "Downloading template for Google Cloud Backup and DR IAM role creation"
 curl ${YAML_URL} -o ${YAML_FILE}
 
@@ -49,7 +49,7 @@ echo
 
 # GCE Instance Backups
 YAML_FILE='backupdr-gce-instance-backup-role-template.yaml'
-YAML_URL=https://raw.githubusercontent.com/Actifio/rolepermissions/main/backupdr-gce-instance-backup-role-template.yaml
+YAML_URL=https://raw.githubusercontent.com/Google/backup-dr-custom-roles/main/backupdr-gce-instance-backup-role-template.yaml
 echo "Downloading template for Google Cloud Backup and DR IAM role creation"
 curl ${YAML_URL} -o ${YAML_FILE}
 
@@ -75,38 +75,6 @@ echo
 echo "Custom Role installed for use with an SA to perform Compute Engine Instance Backups"
 echo
 
-# SA API 
-#YAML_FILE='backupdr-sa-api-role-template.yaml'
-#YAML_URL=https://raw.githubusercontent.com/Actifio/rolepermissions/main/backupdr-sa-api-role-template.yaml
-#echo "Downloading template for Google Cloud Backup and DR IAM role creation"
-#curl ${YAML_URL} -o ${YAML_FILE}
-#
-#echo
-#echo "Creating Google Cloud Backup and Service Account API IAM role, please wait"
-#sleep 5
-#
-# set the variables to be used
-#ROLE_NAME=BackupDRServiceAccountRole
-#
-#echo "Checking if Google Cloud Backup and DR  IAM role ${ROLE_NAME} already exists in project ${PROJECT_ID}"
-# check if role already exists else create new
-#if gcloud iam roles describe ${ROLE_NAME} --project=${PROJECT_ID} --quiet 2>/dev/null
-#then
-#    echo "IAM Role found, running update"
-#        gcloud iam roles update ${ROLE_NAME} --project=${PROJECT_ID} --file=${YAML_FILE} --quiet
-#else
-#    echo "IAM Role not found, creating new"
-#        gcloud iam roles create ${ROLE_NAME} --project=${PROJECT_ID} --file=${YAML_FILE} --quiet
-#fi
-#rm ${YAML_FILE}#
-
 rm installGoogleCloudBDRRoles.sh
-echo
-#echo "Role installed for use with an SA to perform Backup and DR APIs in Google Cloud"
 echo 
 echo "Please close the Cloud Shell and then refresh your browser"
-
-
-
-
-
