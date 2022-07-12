@@ -15,7 +15,7 @@
 
 # ONVAULT
 YAML_FILE='backupdr-onvault-role-template.yaml'
-YAML_URL=https://raw.githubusercontent.com/Google/backup-dr-custom-roles/main/backupdr-onvault-role-template.yaml
+YAML_URL=https://raw.githubusercontent.com/google/backup-dr-custom-roles/main/backupdr-onvault-role-template.yaml
 echo "Downloading template for Google Cloud Backup and DR IAM role creation"
 curl ${YAML_URL} -o ${YAML_FILE}
 
@@ -49,7 +49,7 @@ echo
 
 # GCE Instance Backups
 YAML_FILE='backupdr-gce-instance-backup-role-template.yaml'
-YAML_URL=https://raw.githubusercontent.com/Google/backup-dr-custom-roles/main/backupdr-gce-instance-backup-role-template.yaml
+YAML_URL=https://raw.githubusercontent.com/google/backup-dr-custom-roles/main/backupdr-gce-instance-backup-role-template.yaml
 echo "Downloading template for Google Cloud Backup and DR IAM role creation"
 curl ${YAML_URL} -o ${YAML_FILE}
 
