@@ -13,7 +13,7 @@ Example roles that have this permission include: Owner, Editor or Service Usage 
 To add these roles, in your Google Console Cloud shell, run these three commands with a user that has the **[required permissions](#required-permissions)**<br>
 
 ```
-curl -o installGoogleCloudBDRRoles.sh https://raw.githubusercontent.com/Actifio/rolepermissions/main/installGoogleCloudBDRRoles.sh
+curl -o installGoogleCloudBDRRoles.sh https://raw.githubusercontent.com/Google/backup-dr-custom-roles/main/installGoogleCloudBDRRoles.sh
 chmod +x installGoogleCloudBDRRoles.sh
 ./installGoogleCloudBDRRoles.sh
 ```
