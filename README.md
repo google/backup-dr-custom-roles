@@ -54,7 +54,3 @@ it accepted.
 1.  Create a Pull Request.
 1.  Incorporate review feedback to your changes.
 1.  Accepted!
-
-## License
-
-All files in this repository are under the [Apache License, Version 2.0](LICENSE).
