@@ -90,6 +90,8 @@ includedPermissions:
 - compute.zones.list
 # required to ensure role acts as a Service Account.  Without this you may see job failures with invalid parameters
 - iam.serviceAccounts.actAs
+- iam.serviceAccounts.list
+- iam.serviceAccounts.get
 # Required to display which projects the SA can recover into
 - resourcemanager.projects.get
 # Required for IP address cleanup when Compute Engine VM instance deployment fails
