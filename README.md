@@ -1,3 +1,14 @@
+# Obsolete 
+
+This repository will shortly become obsolete.   The OnVault role is no longer needed as a default role can be used instead:
+
+* Backup and DR OnVault --> Replaced with:  **Backup and DR Cloud Storage Operator**
+
+The Compute Engine Instance backups role will shortly be replaced, although currently the replacement role is still missing five permissions.  When this is corrected then:
+
+* Backup and DR Compute Engine Instance Backups --> **Backup and DR Compute Engine Operator**
+
+
 # Custom role permissions
 This repository contains a script and YAML files to create or update custom roles to use with Google Cloud Backup and DR.
 
@@ -21,12 +32,11 @@ Once the commands have run, close your Cloud Shell and refresh your browser wind
 
 ### New custom roles for Google Cloud Backup and DR
 
-After running the script detailed below, you will have the  custom roles as follows.  Assign these to the relevant Service Accounts as required.
+After running the script detailed below, you will have the custom role as follows.  Assign these to the relevant Service Accounts as required.
 
-* **Backup and DR OnVault**: Use this for adding a Google Cloud Storage bucket to Google Cloud Backup and DR
 * **Backup and DR Compute Engine Instance Backups**: Use this when adding a Credential to either create and use and delete GCP Instance snapshots. 
 
-**If you don't see the new roles, refresh your browser window.**
+**If you don't see this new role, refresh your browser window.**
 
 ## Deleting Custom Roles
 
