@@ -1,12 +1,14 @@
-# Nearly Obsolete 
+#  Obsolete 
 
-This repository will shortly become obsolete.   The OnVault role is no longer needed as a default role can be used instead:
+This repository is now obsolete.   The OnVault role is no longer needed as a default role can be used instead:
 
 * **Backup and DR OnVault** :arrow_right: **Backup and DR Cloud Storage Operator**
 
-The Compute Engine Instance backups role will shortly be replaced, although currently the replacement role is still missing five permissions.  When this is corrected then:
+The Compute Engine Instance backups role is no longer needed as a default role can be used instead:
 
 * **Backup and DR Compute Engine Instance Backups** :arrow_right: **Backup and DR Compute Engine Operator**
+
+Note that the Service Account used for Compute Engine Backups will also need the **Service Account User** role.
 
 
 # Custom role permissions
