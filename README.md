@@ -8,7 +8,6 @@ The Compute Engine Instance backups role is no longer needed as a default role c
 
 * **Backup and DR Compute Engine Instance Backups** :arrow_right: **Backup and DR Compute Engine Operator**
 
-Note that the Service Account used for Compute Engine Backups will also need the **Service Account User** role.
 
 
 # Custom role permissions
